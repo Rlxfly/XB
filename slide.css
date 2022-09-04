@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f2f2f2;
+}
+section .card .image {
+    height: 140px;
+    width: 140px;
+    border-radius: 50%;
+    padding: 3px;
+    background: rgb(70, 163, 250);
+}
+
+section .card .image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #fff;
+}
+
+.card {
+    background: #fff;
+    border-radius: 20px;
+    position: relative;
+    margin: 20px 0;
+    width: 280px;
+}
+
+.card::before {
+    content: '';
+    position: absolute;
+    height: 50%;
+    width: 100%;
+    background: rgb(70, 163, 250);
+    border-radius: 20px 20px 0 0;
+}
+
+.card .card-content {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    z-index: 100;
+}
+
+.card .media-icons {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card .media-icons i {
+    margin-top: 10px;
+    color: #fff;
+    opacity: 0.6;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.card .media-icons i:hover {
+    opacity: 1;
+}
+
+.card .desc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+    color: #333;
+}
+
+.desc .name {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.desc .about {
+    font-size: 15px;
+    font-weight: 500;
+}
