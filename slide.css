@@ -14,6 +14,20 @@ body {
     justify-content: center;
     background: #f2f2f2;
 }
+
+section {
+    position: relative;
+    height: 459px;
+    width: 1075px;
+    display: flex;
+    align-items: center;
+    background: #f2f2f2 /* Kombinasi background */
+}
+
+.swiper {
+    width: 950px;
+    
+}
 section .card .image {
     height: 140px;
     width: 140px;
@@ -35,13 +49,12 @@ section .card .image img {
     border-radius: 20px;
     position: relative;
     margin: 20px 0;
-    width: 280px;
 }
 
 .card::before {
     content: '';
     position: absolute;
-    height: 50%;
+    height: 40%;
     width: 100%;
     background: rgb(70, 163, 250);
     border-radius: 20px 20px 0 0;
@@ -93,4 +106,25 @@ section .card .image img {
 .desc .about {
     font-size: 15px;
     font-weight: 500;
+}
+
+.swiper-pagination{
+    position: absolute;
+}
+.swiper-pagination-bullet {
+    height: 7px;
+    width: 26px;
+    border-radius: 25px;
+    background: rgb(70, 163, 250);
+}
+
+.swiper-button-next, .swiper-button-prev {
+    opacity: 0.7;
+    background: #f2f2f2;
+    transition: all 0.3s ease;
+}
+
+.swiper-button-next:hover, .swiper-button-prev:hover {
+    opacity: 1;
+    color: rgb(85, 250, 70);
 }
